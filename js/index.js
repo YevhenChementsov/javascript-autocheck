@@ -1,6 +1,6 @@
 // ==========  Задача №1  ==========
 
-// const productName = "Droid";
+// const productName = 'Droid';
 // console.log(productName);
 // ("Droid");
 // const pricePerItem = 2000;
@@ -262,7 +262,7 @@
 // const firstElement = courseTopic[0];
 // const lastElement = courseTopic[courseTopic.length - 1];
 
-// // ==========  Задача №32  ==========
+// ==========  Задача №32  ==========
 
 // function getSubstring(string, length) {
 //   const substring = string.slice(0, length);
@@ -302,4 +302,34 @@
 //   result = message.includes('spam') || message.includes('sale');
 
 //   return result;
+// }
+
+// ==========  Игра Модуля-01 (Угадай число)  ==========
+
+// const secretNumber = Math.round(Math.random() * 100 + 1);
+// console.log('secretNumber:', secretNumber);
+
+// let userNumber;
+
+// do {
+//   userNumber = Number.parseInt(prompt('Enter a number'));
+
+//   if (secretNumber === userNumber) {
+//     console.log('You Win!');
+//   } else if (secretNumber > userNumber) {
+//     console.log('x >', userNumber);
+//   } else if (secretNumber < userNumber) {
+//     console.log('x <', userNumber);
+//   } else {
+//     console.log('Exit');
+//   }
+// } while (secretNumber !== userNumber && !isNaN(userNumber));
+
+// ==========  (Таблица умножения)  ==========
+
+// for (let i = 1; i < 11; i++) {
+//   for (let j = 1; j < 11; j++) {
+//     console.log(`${i} x ${j} = ${i * j}`);
+//   }
+//   console.log('==========');
 // }
