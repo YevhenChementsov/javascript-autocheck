@@ -1,11 +1,9 @@
 // ==========  Задача №1  ==========
 
 // const productName = 'Droid';
-// console.log(productName);
-// ('Droid');
+// console.log('productName:', productName);
 // const pricePerItem = 2000;
-// console.log(pricePerItem);
-// 2000;
+// console.log('pricePerItem:', pricePerItem);
 
 // ==========  Задача №2  ==========
 
@@ -150,16 +148,13 @@
 
 // function checkAge(age) {
 //   let message;
-
 //   if (age >= 18) {
 //     message = 'You are an adult';
 //   } else {
 //     message = 'You are a minor';
 //   }
-
 //   return message;
 // }
-
 // console.log(checkAge(20));
 // console.log(checkAge(8));
 // console.log(checkAge(14));
@@ -169,16 +164,13 @@
 
 // function checkStorage(available, ordered) {
 //   let message;
-
 //   if (ordered > available) {
 //     message = 'Not enough goods in stock!';
 //   } else {
 //     message = 'Order is processed, our manager will contact you.';
 //   }
-
 //   return message;
 // }
-
 // console.log(checkStorage(100, 50));
 // console.log(checkStorage(100, 130));
 // console.log(checkStorage(200, 20));
@@ -191,12 +183,10 @@
 // let b = 10;
 // let c = 15;
 // let d = 20;
-
 // a += 2;
 // b -= 4;
 // c *= 3;
 // d /= 10;
-
 // console.log(a);
 // console.log(b);
 // console.log(c);
@@ -206,9 +196,7 @@
 
 // function makeTransaction(pricePerDroid, orderedQuantity, customerCredits) {
 //   let message;
-
 //   const totalPrice = pricePerDroid * orderedQuantity;
-
 //   if (totalPrice > customerCredits) {
 //     message = 'Insufficient funds!';
 //   } else {
@@ -216,10 +204,8 @@
 //       customerCredits - totalPrice
 //     } credits left`;
 //   }
-
 //   return message;
 // }
-
 // console.log(makeTransaction(3000, 5, 23000));
 // console.log(makeTransaction(1000, 3, 15000));
 // console.log(makeTransaction(5000, 10, 8000));
@@ -231,18 +217,15 @@
 // function checkPassword(password) {
 //   const ADMIN_PASSWORD = 'jqueryismyjam';
 //   let message;
-
 //   if (password === null) {
 //     message = 'Canceled by user!';
-//   } else if (password === 'jqueryismyjam') {
+//   } else if (password === ADMIN_PASSWORD) {
 //     message = 'Welcome!';
 //   } else {
 //     message = 'Access denied, wrong password!';
 //   }
-
 //   return message;
 // }
-
 // console.log(checkPassword('mangohackzor'));
 // console.log(checkPassword(null));
 // console.log(checkPassword('polyhax'));
@@ -252,7 +235,6 @@
 
 // function checkStorage(available, ordered) {
 //   let message;
-
 //   if (ordered === 0) {
 //     message = 'There are no products in the order!';
 //   } else if (ordered > available) {
@@ -260,10 +242,8 @@
 //   } else {
 //     message = 'The order is accepted, our manager will contact you';
 //   }
-
 //   return message;
 // }
-
 // console.log(checkStorage(100, 50));
 // console.log(checkStorage(100, 130));
 // console.log(checkStorage(70, 0));
@@ -275,26 +255,35 @@
 
 // function isNumberInRange(start, end, number) {
 //   const isInRange = start <= number && number <= end;
-
 //   return isInRange;
 // }
+// console.log(isNumberInRange(10, 30, 17));
+// console.log(isNumberInRange(10, 30, 5));
+// console.log(isNumberInRange(20, 50, 24));
+// console.log(isNumberInRange(20, 50, 76));
 
 // ==========  Задача №22  ==========
 
 // function checkIfCanAccessContent(subType) {
-//   const canAccessContent = subType === 'pro' || subType === 'vip'; // Change this line
-
+//   const canAccessContent = subType === 'pro' || subType === 'vip';
 //   return canAccessContent;
 // }
+// console.log(checkIfCanAccessContent('pro'));
+// console.log(checkIfCanAccessContent('starter'));
+// console.log(checkIfCanAccessContent('vip'));
+// console.log(checkIfCanAccessContent('free'));
 
 // ==========  Задача №23  ==========
 
 // function isNumberNotInRange(start, end, number) {
 //   const isInRange = number >= start && number <= end;
-//   const isNotInRange = !isInRange; // Change this line
-
+//   const isNotInRange = !isInRange;
 //   return isNotInRange;
 // }
+// console.log(isNumberNotInRange(10, 30, 17));
+// console.log(isNumberNotInRange(10, 30, 5));
+// console.log(isNumberNotInRange(20, 50, 24));
+// console.log(isNumberNotInRange(20, 50, 76));
 
 // ==========  Задача №24  ==========
 
@@ -315,6 +304,13 @@
 //   }
 //   return discount;
 // }
+// console.log(getDiscount(137000));
+// console.log(getDiscount(46900));
+// console.log(getDiscount(8250));
+// console.log(getDiscount(1300));
+// console.log(getDiscount(5000));
+// console.log(getDiscount(20000));
+// console.log(getDiscount(50000));
 
 // ==========  Задача №25  ==========
 
@@ -326,6 +322,11 @@
 //       : 'Not enough goods in stock!';
 //   return message;
 // }
+// console.log(checkStorage(100, 50));
+// console.log(checkStorage(100, 130));
+// console.log(checkStorage(200, 20));
+// console.log(checkStorage(200, 150));
+// console.log(checkStorage(150, 180));
 
 // ==========  Задача №26  ==========
 
@@ -333,81 +334,86 @@
 //   const ADMIN_PASSWORD = 'jqueryismyjam';
 //   let message;
 //   message =
-//     password === 'jqueryismyjam'
+//     password === ADMIN_PASSWORD
 //       ? 'Access is allowed'
 //       : 'Access denied, wrong password!';
 //   return message;
 // }
+// console.log(checkPassword('jqueryismyjam'));
+// console.log(checkPassword('angul4r1sl1f3'));
+// console.log(checkPassword('r3actsux'));
 
 // ==========  Задача №27  ==========
 
 // function getSubscriptionPrice(type) {
 //   let price;
-
 //   switch (type) {
 //     case 'starter':
 //       price = 0;
 //       break;
-
 //     case 'professional':
 //       price = 20;
 //       break;
-
 //     case 'organization':
 //       price = 50;
 //       break;
 //   }
 //   return price;
 // }
+// console.log(getSubscriptionPrice('professional'));
+// console.log(getSubscriptionPrice('organization'));
+// console.log(getSubscriptionPrice('starter'));
 
 // ==========  Задача №28  ==========
 
 // function checkPassword(password) {
 //   const ADMIN_PASSWORD = 'jqueryismyjam';
 //   let message;
-
 //   switch (password) {
 //     case null:
 //       message = 'Canceled by user!';
 //       break;
-//     case 'jqueryismyjam':
+//     case ADMIN_PASSWORD:
 //       message = 'Welcome!';
 //       break;
 //     default:
 //       message = 'Access denied, wrong password!';
 //   }
-
 //   return message;
 // }
+// console.log(checkPassword('mangohackzor'));
+// console.log(checkPassword(null));
+// console.log(checkPassword('polyhax'));
+// console.log(checkPassword('jqueryismyjam'));
 
 // ==========  Задача №29  ==========
 
 // function getShippingCost(country) {
 //   let message;
-
 //   switch (country) {
 //     case 'China':
 //       message = 'Shipping to China will cost 100 credits';
 //       break;
-
 //     case 'Chile':
 //       message = 'Shipping to Chile will cost 250 credits';
 //       break;
-
 //     case 'Australia':
 //       message = 'Shipping to Australia will cost 170 credits';
 //       break;
-
 //     case 'Jamaica':
 //       message = 'Shipping to Jamaica will cost 120 credits';
 //       break;
-
 //     default:
 //       message = 'Sorry, there is no delivery to your country';
 //   }
-
 //   return message;
 // }
+// console.log(getShippingCost('Australia'));
+// console.log(getShippingCost('Germany'));
+// console.log(getShippingCost('China'));
+// console.log(getShippingCost('Chile'));
+// console.log(getShippingCost('Jamaica'));
+// console.log(getShippingCost('Sweden'));
 
 // ==========  Задача №30  ==========
 
@@ -415,6 +421,7 @@
 //   const message = `Name ${name} is ${name.length} characters long`;
 //   return message;
 // }
+// console.log(getNameLength('Poly'));
 
 // ==========  Задача №31  ==========
 
@@ -422,6 +429,10 @@
 // const courseTopicLength = courseTopic.length;
 // const firstElement = courseTopic[0];
 // const lastElement = courseTopic[courseTopic.length - 1];
+// console.log(courseTopic);
+// console.log(courseTopicLength);
+// console.log(firstElement);
+// console.log(lastElement);
 
 // ==========  Задача №32  ==========
 
@@ -429,6 +440,11 @@
 //   const substring = string.slice(0, length);
 //   return substring;
 // }
+// console.log(getSubstring('Hello world', 3));
+// console.log(getSubstring('Hello world', 6));
+// console.log(getSubstring('Hello world', 8));
+// console.log(getSubstring('Hello world', 11));
+// console.log(getSubstring('Hello world', 0));
 
 // ==========  Задача №33  ==========
 
@@ -438,14 +454,23 @@
 //     message.length > maxLength ? message.slice(0, maxLength) + '...' : message;
 //   return result;
 // }
+// console.log(formatMessage('Curabitur ligula sapien', 16));
+// console.log(formatMessage('Curabitur ligula sapien', 23));
+// console.log(formatMessage('Vestibulum facilisis purus nec', 20));
+// console.log(formatMessage('Vestibulum facilisis purus nec', 30));
+// console.log(formatMessage('Nunc sed turpis a felis in nunc fringilla', 15));
+// console.log(formatMessage('Nunc sed turpis a felis in nunc fringilla', 41));
 
 // ==========  Задача №34  ==========
 
 // function normalizeInput(input) {
-//   const normalizedInput = input.toLowerCase(); // Change this line
+//   const normalizedInput = input.toLowerCase();
 
 //   return normalizedInput;
 // }
+// console.log(normalizeInput('Hello world'));
+// console.log(normalizeInput("This ISN'T SpaM"));
+// console.log(normalizeInput('Big SALE'));
 
 // ==========  Задача №35  ==========
 
@@ -453,28 +478,37 @@
 //   const result = fullName.includes(name);
 //   return result;
 // }
+// console.log(checkForName('Egor Kolbasov', 'Egor'));
+// console.log(checkForName('Egor Kolbasov', 'egor'));
+// console.log(checkForName('Egor Kolbasov', 'egOr'));
+// console.log(checkForName('Egor Kolbasov', 'Zhenya'));
+// console.log(checkForName('Vadim Nekrasov', 'Vadim'));
+// console.log(checkForName('Egor Kolbasov', 'vadim'));
+// console.log(checkForName('Egor Kolbasov', 'Dima'));
 
 // ==========  Задача №36  ==========
 
 // function checkForSpam(message) {
 //   let result;
-
 //   message = message.toLowerCase();
 //   result = message.includes('spam') || message.includes('sale');
-
 //   return result;
 // }
+// console.log(checkForSpam('Latest technology news'));
+// console.log(checkForSpam('JavaScript weekly newsletter'));
+// console.log(checkForSpam('Get best sale offers now!'));
+// console.log(checkForSpam('Amazing SalE, only tonight!'));
+// console.log(checkForSpam('Trust me, this is not a spam message'));
+// console.log(checkForSpam('Get rid of sPaM emails. Our book in on sale!'));
+// console.log(checkForSpam('[SPAM] How to earn fast money?'));
 
 // ==========  Игра Модуля-01 (Угадай число)  ==========
 
 // const secretNumber = Math.round(Math.random() * 100 + 1);
 // console.log('secretNumber:', secretNumber);
-
 // let userNumber;
-
 // do {
 //   userNumber = Number.parseInt(prompt('Enter a number'));
-
 //   if (secretNumber === userNumber) {
 //     console.log('You Win!');
 //   } else if (secretNumber > userNumber) {
