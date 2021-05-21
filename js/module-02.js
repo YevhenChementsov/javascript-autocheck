@@ -117,16 +117,196 @@
 // );
 
 // ==========  Задача №10  ==========
+
+// function splitMessage(message, delimeter) {
+//   let words;
+//   words = message.split(delimeter);
+//   return words;
+// }
+// console.log(
+//   'splitMessage("Mango hurries to the train", " ") :',
+//   splitMessage('Mango hurries to the train', ' '),
+// );
+// console.log('splitMessage("Mango", "") :', splitMessage('Mango', ''));
+// console.log(
+//   'splitMessage("best_for_week", "_") :',
+//   splitMessage('best_for_week', '_'),
+// );
+
 // ==========  Задача №11  ==========
+
+// function calculateEngravingPrice(message, pricePerWord) {
+//   message = message.split(' ').length;
+//   let totalPrice = message * pricePerWord;
+//   return totalPrice;
+// }
+// console.log(
+//   "calculateEngravingPrice('JavaScript is in my blood', 10):",
+//   calculateEngravingPrice('JavaScript is in my blood', 10),
+// );
+// console.log(
+//   "calculateEngravingPrice('JavaScript is in my blood', 20):",
+//   calculateEngravingPrice('JavaScript is in my blood', 20),
+// );
+// console.log(
+//   "calculateEngravingPrice('Web-development is creative work', 40):",
+//   calculateEngravingPrice('Web-development is creative work', 40),
+// );
+// console.log(
+//   "calculateEngravingPrice('Web-development is creative work', 20):",
+//   calculateEngravingPrice('Web-development is creative work', 20),
+// );
+
 // ==========  Задача №12  ==========
+
+// function makeStringFromArray(array, delimeter) {
+//   let string;
+//   string = array.join(delimeter);
+//   return string;
+// }
+// console.log(
+//   "makeStringFromArray(['Mango', 'hurries', 'to', 'the', 'train'], ' '):",
+//   makeStringFromArray(['Mango', 'hurries', 'to', 'the', 'train'], ' '),
+// );
+// console.log(
+//   "makeStringFromArray(['M', 'a', 'n', 'g', 'o'], ''):",
+//   makeStringFromArray(['M', 'a', 'n', 'g', 'o'], ''),
+// );
+// console.log(
+//   "makeStringFromArray(['top', 'picks', 'for', 'you'], '_'):",
+//   makeStringFromArray(['top', 'picks', 'for', 'you'], '_'),
+// );
+
 // ==========  Задача №13  ==========
+
+// function slugify(title) {
+//   let slug;
+//   slug = title.toLowerCase().split(' ').join('-');
+//   return slug;
+// }
+// console.log(
+//   "slugify('Arrays for begginers'):",
+//   slugify('Arrays for begginers'),
+// );
+// console.log(
+//   "slugify('Ten secrets of JavaScript'):",
+//   slugify('Ten secrets of JavaScript'),
+// );
+// console.log(
+//   "slugify('How to become a JUNIOR developer in TWO WEEKS'):",
+//   slugify('How to become a JUNIOR developer in TWO WEEKS'),
+// );
+
 // ==========  Задача №14  ==========
+
+// const fruits = ['apple', 'plum', 'pear', 'orange', 'banana'];
+// const firstTwoEls = fruits.slice(0, 2);
+// const nonExtremeEls = fruits.slice(1, 4);
+// const lastThreeEls = fruits.slice(-3);
+// console.log('Все элементы:', fruits);
+// console.log('Первые два:', firstTwoEls);
+// console.log('Все элементы кроме первого и последнего:', nonExtremeEls);
+// console.log('Три последних элемента:', lastThreeEls);
+
 // ==========  Задача №15  ==========
+
+// const oldClients = ['Mango', 'Ajax', 'Poly', 'Kiwi'];
+// const newClients = ['Peach', 'Houston'];
+// const allClients = oldClients.concat(newClients);
+// console.log('Старые клиенты:', oldClients);
+// console.log('Новые клиенты:', newClients);
+// console.log('Все клиенты:', allClients);
+
 // ==========  Задача №16  ==========
+
+// function makeArray(firstArray, secondArray, maxLength) {
+//   let newArray = firstArray.concat(secondArray);
+//   if (newArray.length > maxLength) {
+//     return newArray.slice(0, maxLength);
+//   }
+//   return newArray;
+// }
+// console.log(
+//   "Массив ['Mango', 'Poly'], ['Ajax', 'Chelsea'], 3 возвращает:",
+//   makeArray(['Mango', 'Poly'], ['Ajax', 'Chelsea'], 3),
+// );
+// console.log(
+//   "Массив ['Mango', 'Poly', 'Houston'], ['Ajax', 'Chelsea'], 4 возвращает:",
+//   makeArray(['Mango', 'Poly', 'Houston'], ['Ajax', 'Chelsea'], 4),
+// );
+// console.log(
+//   "Массив ['Mango'], ['Ajax', 'Chelsea', 'Poly', 'Houston'], 3 возвращает:",
+//   makeArray(['Mango'], ['Ajax', 'Chelsea', 'Poly', 'Houston'], 3),
+// );
+// console.log(
+//   "Массив ['Earth', 'Jupiter'], ['Neptune', 'Uranus'], 2 возвращает:",
+//   makeArray(['Earth', 'Jupiter'], ['Neptune', 'Uranus'], 2),
+// );
+// console.log(
+//   "Массив ['Earth', 'Jupiter'], ['Neptune', 'Uranus'], 4 возвращает:",
+//   makeArray(['Earth', 'Jupiter'], ['Neptune', 'Uranus'], 4),
+// );
+// console.log(
+//   "Массив ['Earth', 'Jupiter'], ['Neptune', 'Uranus', 'Venus'], 0 возвращает:",
+//   makeArray(['Earth', 'Jupiter'], ['Neptune', 'Uranus', 'Venus'], 0),
+// );
+
 // ==========  Задача №17  ==========
+
+// const start = 3;
+// const end = 7;
+// for (let i = start; i <= end; i += 1) {
+//   console.log(i);
+// }
+
 // ==========  Задача №18  ==========
+
+// function calculateTotal(number) {
+//   let sum = 0;
+//   for (let i = 0; i <= number; i += 1) {
+//     sum += i;
+//   }
+//   return sum;
+// }
+// console.log(
+//   'Возвращает сумму всех целых чисел от единицы и до 1 :',
+//   calculateTotal(1),
+// );
+// console.log(
+//   'Возвращает сумму всех целых чисел от единицы и до 3 :',
+//   calculateTotal(3),
+// );
+// console.log(
+//   'Возвращает сумму всех целых чисел от единицы и до 7 :',
+//   calculateTotal(7),
+// );
+// console.log(
+//   'Возвращает сумму всех целых чисел от единицы и до 18 :',
+//   calculateTotal(18),
+// );
+// console.log(
+//   'Возвращает сумму всех целых чисел от единицы и до 24 :',
+//   calculateTotal(24),
+// );
+
 // ==========  Задача №19  ==========
+
+// const fruits = ['apple', 'plum', 'pear', 'orange'];
+// for (let i = 0; i < fruits.length; i += 1) {
+//   const fruit = fruits[i];
+//   console.log(fruit);
+// }
+
 // ==========  Задача №20  ==========
+
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   for (i = 0; i < order.length; i += 1) {
+//     total += order[i];
+//   }
+//   return total;
+// }
+
 // ==========  Задача №21  ==========
 // ==========  Задача №22  ==========
 // ==========  Задача №23  ==========
