@@ -308,14 +308,143 @@
 // }
 
 // ==========  Задача №21  ==========
+
+// function findLongestWord(string) {
+//   const word = string.split(' ');
+//   let longestWord = word[0];
+//   for (let index = 0; index < word.length; index += 1) {
+//     if (longestWord.length < word[index].length) {
+//       longestWord = word[index];
+//     }
+//   }
+//   return longestWord;
+// }
+// console.log(
+//   'Самое длинное слово в строке "The quick brown fox jumped over the lazy dog" :',
+//   findLongestWord('The quick brown fox jumped over the lazy dog'),
+// );
+// console.log(
+//   'Самое длинное слово в строке "Google do a roll" :',
+//   findLongestWord('Google do a roll'),
+// );
+// console.log(
+//   'Самое длинное слово в строке "May the force be with you" :',
+//   findLongestWord('May the force be with you'),
+// );
+
 // ==========  Задача №22  ==========
+
+// function createArrayOfNumbers(min, max) {
+//   const numbers = [];
+//   for (let i = min; i <= max; i += 1) {
+//     numbers.push(i);
+//   }
+//   return numbers;
+// }
+
 // ==========  Задача №23  ==========
+
+// function filterArray(numbers, value) {
+//   const filterNumbers = [];
+//   for (const number of numbers) {
+//     if (number > value) {
+//       filterNumbers.push(number);
+//     }
+//   }
+//   return filterNumbers;
+// }
+
 // ==========  Задача №24  ==========
+
+// function checkFruit(fruit) {
+//   const fruits = ['apple', 'plum', 'pear', 'orange'];
+//   return fruits.includes(fruit);
+// }
+
 // ==========  Задача №25  ==========
+
+// function getCommonElements(array1, array2) {
+//   const newArray = [];
+//   for (const element of array1) {
+//     if (array2.includes(element)) {
+//       newArray.push(element);
+//     }
+//   }
+//   return newArray;
+// }
+
 // ==========  Задача №26  ==========
+
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   for (const number of order) {
+//     total += number;
+//   }
+//   return total;
+// }
+
 // ==========  Задача №27  ==========
+
+// function filterArray(numbers, value) {
+//   const filteredNumbers = [];
+//   for (const number of numbers) {
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   }
+//   return filteredNumbers;
+// }
+
 // ==========  Задача №28  ==========
+
+// const a = 3 % 1;
+// const b = 4 % 3;
+// const c = 11 % 8;
+// const d = 12 % 7;
+// const e = 8 % 6;
+
 // ==========  Задача №29  ==========
+
+// function getEvenNumbers(start, end) {
+//   const evenNumbers = [];
+//   for (let i = start; i <= end; i += 1) {
+//     if (i % 2 === 0) {
+//       evenNumbers.push(i);
+//     }
+//   }
+//   return evenNumbers;
+// }
+
 // ==========  Задача №30  ==========
+
+// const start = 6;
+// const end = 27;
+// let number;
+// for (let i = start; i < end; i += 1) {
+//   if (i % 5 === 0) {
+//     number = i;
+//     break;
+//   }
+// }
+
 // ==========  Задача №31  ==========
+
+// function findNumber(start, end, divisor) {
+//   let number;
+//   for (let i = start; i < end; i += 1) {
+//     if (i % divisor === 0) {
+//       return i;
+//     }
+//   }
+// }
+
 // ==========  Задача №32  ==========
+
+// function includes(array, value) {
+//   for (let i = 0; i < array.length; i += 1) {
+//     if (array[i] === value) {
+//       return true;
+//     }
+//   }
+//   return false;
+// }
