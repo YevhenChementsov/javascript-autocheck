@@ -3,5 +3,6 @@
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
   "files.autoSave": "onFocusChange",
-  "editor.tabSize": 2
+  "editor.tabSize": 2,
+  "vscodeGoogleTranslate.preferredLanguage": "English"
 }
