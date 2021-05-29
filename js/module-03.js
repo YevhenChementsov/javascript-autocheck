@@ -728,12 +728,11 @@
 //   },
 //   addPotion(potionName) {
 //     const { potions } = this;
-//     const { name } = potionName;
 //     for (let i = 0; i < potions.length; i += 1) {
-//       if (potions[i].name === name) {
-//         return `Potion ${name} is already equipped!`;
+//       if (potions[i].name !== potionName) {
+//         potions.push(potionName);
 //       }
-//       potions.push(potionName);
+//       return `Potion ${potionName} is already equipped!`;
 //     }
 //   },
 //   removePotion(potionName) {
@@ -757,3 +756,28 @@
 //     return `Potion ${oldName} is not in inventory!`;
 //   },
 // };
+// console.log('getAllPotions:', atTheOldToad.getPotions());
+// console.log(
+//   'addPotion({ name: "Invisibility", price: 620 }):',
+//   atTheOldToad.addPotion({ name: 'Invisibility', price: 620 }),
+// );
+// console.log(
+//   'addPotion({ name: "Power potion", price: 270 }):',
+//   atTheOldToad.addPotion({ name: 'Power potion', price: 270 }),
+// );
+// console.log(
+//   'removePotion("Dragon breath"):',
+//   atTheOldToad.removePotion('Dragon breath'),
+// );
+// console.log(
+//   'removePotion("Speed potion"):',
+//   atTheOldToad.removePotion('Speed potion'),
+// );
+// console.log(
+//   'updatePotionName("Dragon breath" to "Polymorth"):',
+//   atTheOldToad.updatePotionName('Dragon breath', 'Polymorth'),
+// );
+// console.log(
+//   'updatePotionName("Stone skin" to "Invulnerability potion"):',
+//   atTheOldToad.updatePotionName('Stone skin', 'Invulnerability potion'),
+// );
