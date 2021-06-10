@@ -415,6 +415,7 @@
 
 // ==========  Задача №19  ==========
 
+// Вариант №1
 // class User {
 //   email;
 
@@ -431,7 +432,6 @@
 //   }
 // }
 // class Admin extends User {
-//   // Пиши код ниже этой строки
 
 //   static AccessLevel = {
 //     BASIC: 'basic',
@@ -459,9 +459,48 @@
 //       }
 //     return true;
 //   }
+// }
+
+// Вариант №2
+// class User {
+//   email;
+
+//   constructor(email) {
+//     this.email = email;
 //   }
 
-//   // Пиши код выше этой строки
+//   get email() {
+//     return this.email;
+//   }
+
+//   set email(newEmail) {
+//     this.email = newEmail;
+//   }
+// }
+// class Admin extends User {
+
+//     static AccessLevel = {
+//     BASIC: 'basic',
+//     SUPERUSER: 'superuser'
+//   };
+
+//   blacklistedEmails;
+
+//   accessLevel;
+
+//   constructor({ email, accessLevel }) {
+//     super(email);
+//     this.accessLevel = accessLevel;
+//     this.blacklistedEmails = [];
+//   }
+
+//   blacklist(email) {
+//     this.blacklistedEmails.push(email);
+//   }
+
+//   isBlacklisted(email) {
+//     return this.blacklistedEmails.includes(email) ? true : false;
+//   }
 // }
 
 // const mango = new Admin({
